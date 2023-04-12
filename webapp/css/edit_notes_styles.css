@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+}
+
+#edit-note-form {
+}
+
+#edit-note-form form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	
+	height: 75%;
+	width: 75%;
+}
+
+#edit-note-form form div {
+	display: flex;
+}
+
+#edit-note-form form div button {
+	margin: auto 2px;
+}
+
+textarea {
+	resize: vertical;
+	min-height: 100px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Create an Account</title>
+		
+		<link rel="stylesheet" type="text/css" href="./css/login_registration_styles.css">
+	</head>
+	<body>
+		<!-- Registration Form  -->
+		<form action="Register" method="post" id="registration-form">
+			<h2>Enter information to create your account</h2>
+			<hr>
+			<label for="firstname">First Name</label>
+			<br>
+			<input type="text" name="firstname" id="firstname" required>
+			<br>
+			<label for="lastname">Last Name</label>
+			<br>
+			<input type="text" name="lastname" id="lastname" required>
+			<br>
+			<label for="email">Email</label>
+			<br>
+			<input type="email" name="email" id="email" required>
+			<br>
+			<label for="username">Username</label>
+			<br>
+			<input type="text" name="username" id="username" required>
+			<br>
+			<label for="pswd">Password</label>
+			<br>
+			<input type="password" name="pswd" id="pswd" required>
+			<br>
+			<input type="submit" value="Create Account" id="registration-submit-btn">
+			<p class="error"></p>
+		</form>
+		
+	</body>
+</html>

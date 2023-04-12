@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: auto;
+}
+
+
+main {
+	margin: 40px;
+}
+
+.note {
+	background-color: red;
+}
+
+#add-note-form form button {
+	width: fit-content;
+	margin: 5px auto;
+}
+
+#add-note-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+#add-note-form {
+	justify-content: center;
+	
+	width: 33%;
+}
+
+textarea {
+	resize: vertical;
+	min-height: 50px;
+}
+
+.two-notes-or-less-fix {
+	justify-content: center;
+}
+
+.two-notes-or-less-fix > * {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.hidden {
+	display: none;
+}
+
+
+@media screen and (max-width: 1001px) {
+	/* For larger tablets */
+	body {
+		background-color: black;
+	}
+	.note {
+		background-color: blue;
+	}
+	.two-notes-or-less-fix {
+		justify-content: space-between;
+	}
+	
+	.two-notes-or-less-fix > * {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	/* For medium tablets */
+	body {
+		background-color: orange;
+	}
+	.note {
+		background-color: blue;
+	}
+	.two-notes-or-less-fix {
+		justify-content: space-between;
+	}
+	
+	.two-notes-or-less-fix > * {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 479px) {
+	/* For phones */
+	body {
+		background-color: pink;
+	}
+	.note {
+		background-color: blue;
+	}
+	main {
+		flex-direction: column;
+	}
+	.two-notes-or-less-fix {
+		justify-content: space-between;
+	}
+	
+	.two-notes-or-less-fix > * {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	.grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
